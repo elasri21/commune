@@ -1,0 +1,16 @@
+button, .btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 7px 10px;
+    background-color: $btn-bg;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+    &:hover {
+        opacity: .8;
+    }
+}

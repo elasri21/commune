@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@600&family=Cairo:wght@300;400;600&family=Commissioner:wght@400;500;700&family=Epilogue:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&family=Inter:wght@400;500;600;700&family=Josefin+Sans:wght@300&family=Lato:ital,wght@1,700&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@500;700&family=Nunito:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f2f8f9;
+}
+
+i {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+button, .btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  padding: 7px 10px;
+  background-color: #300c63;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+button:hover, .btn:hover {
+  opacity: .8;
+}
+
+header {
+  position: relative;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 922px) {
+  header {
+    padding: 20px 50px;
+  }
+  header nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul li {
+    margin-right: 20px;
+  }
+  header .menu {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 921px) {
+  header {
+    padding: 20px 30px;
+  }
+  header nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul li {
+    margin-right: 20px;
+  }
+  header .menu {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  header nav {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li {
+    margin-bottom: 15px;
+  }
+}
+header nav {
+  display: none;
+}
+header nav ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header .menu {
+  display: block;
+}
+header .menu img {
+  cursor: pointer;
+}
+header .close {
+  display: none;
+}
+
+.main-sec {
+  padding: 20px 20px;
+}
+@media (min-width: 922px) {
+  .main-sec {
+    margin-top: 30px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-sec .info {
+    width: 55% !important;
+  }
+  .main-sec .illus {
+    display: block !important;
+    width: 40%;
+  }
+  .main-sec .illus img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 921px) {
+  .main-sec {
+    margin-top: 20px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-sec .info {
+    width: 55% !important;
+  }
+}
+@media (max-width: 767px) {
+  .main-sec .info p {
+    text-align: center;
+  }
+  .main-sec .info p.with-bg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-sec .info h1 {
+    text-align: center;
+  }
+  .main-sec .info form input {
+    width: 100%;
+  }
+  .main-sec .info form input.email {
+    margin-bottom: 10px;
+  }
+}
+.main-sec .info p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #8f8f8f;
+}
+.main-sec .info p.with-bg {
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: #300c63;
+  border-radius: 20px;
+  color: #fff;
+}
+.main-sec .info p.with-bg a {
+  color: #fff;
+}
+.main-sec .info p.with-bg a:hover {
+  text-decoration: underline;
+}
+.main-sec .info h1 {
+  margin-top: 20px;
+  color: #110324;
+}
+.main-sec .info form {
+  margin-top: 20px;
+}
+.main-sec .info form input {
+  outline: none;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+.main-sec .info form input.email {
+  background-color: #fff;
+  border: 1px solid #8f8f8f;
+}
+.main-sec .info form input.submit {
+  border: 1px solid #300c63;
+}
+.main-sec .illus {
+  display: none;
+}
+
+footer {
+  padding: 20px 50px;
+  margin-top: 20px;
+}
+footer p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8f8f8f;
+  margin-bottom: 10px;
+}
+footer .companies {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .companies img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
